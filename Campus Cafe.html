@@ -7,74 +7,11 @@
 	<!-- CDN import -->
 	<!----
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" rel="stylesheet" />
+	<link href="/css/local.css" rel="stylesheet" />
 
 	<!-- On server import -->
 	<link href="css/calendar/css/fullcalendar.min.css" rel="stylesheet" />
 	<!---->
-	<style>
-		html,
-		body {
-			margin: 0;
-			padding: 0;
-			font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
-			font-size: 14px;
-		}
-
-		#calendar {
-			max-width: 900px;
-			margin: 40px auto;
-			/* local image address */
-			/**
-			background-image: url('img/DSCF4205_retouched.jpg');
-			/* On server image address */
-			/**/
-			background-image: url('../images/DSCF4205_retouched.jpg');
-			/**/
-			padding: 20px;
-			border: 2px outset #888;
-			border-radius: 5px;
-		}
-
-		#calendar h2 {
-			color: #000;
-		}
-
-		.fc-toolbar.fc-header-toolbar {
-			margin-bottom: 0 !important;
-			padding-bottom: 1em;
-		}
-
-		#calendar div.fc-toolbar.fc-header-toolbar,
-		#calendar div.fc-view-container {
-			background-color: rgba(255, 255, 255, 0.5);
-			border-radius: 5px 5px 0 0;
-		}
-
-		.fc-view>table {
-			border-collapse: separate !important;
-		}
-
-		.fc-widget-content {
-			border-radius: 0 0 5px 5px;
-		}
-
-		.fc-day-number {
-			font-weight: bolder;
-		}
-
-		.fc-unthemed .fc-content,
-		.fc-unthemed .fc-divider,
-		.fc-unthemed .fc-list-heading td,
-		.fc-unthemed .fc-list-view,
-		.fc-unthemed .fc-popover,
-		.fc-unthemed .fc-row,
-		.fc-unthemed tbody,
-		.fc-unthemed td,
-		.fc-unthemed th,
-		.fc-unthemed thead {
-			border-color: #000 !important;
-		}
-	</style>
 </head>
 
 <body>
@@ -86,6 +23,7 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js'></script>
 	<script src='https://fullcalendar.io/releases/fullcalendar/3.9.0/gcal.min.js'></script>
+	<script src='/js/local.js'></script>
 
 	<!-- On server imports for scripts -->
 	<!---->
@@ -95,24 +33,7 @@
 	<script src='css/calendar/js/gcal.min.js'></script>
 
 	<!-- Implemetation scripts for fullcalendar -->
-	<script>
-		$(function () {
-			$('#calendar').fullCalendar({
-				header: {
-					left: 'prev,next today',
-					center: 'title',
-					right: 'month,listYear'
-				},
-				displayEventTime: false,
-				googleCalendarApiKey: 'AIzaSyCvfqhG0sp2h9YGStl9B0Lx46QAMEPgDpI',
-				events: 'kingdomcollege.net_4nj2njko8q2otfrb0jkc2v2ggo@group.calendar.google.com',
-				eventClick: function (event) {
-					window.open(event.url, '_blank', 'width=700,height=600');
-					return false;
-				}
-			});
-		});
-	</script>
+	<script src='css/calendar/js/local.js'></script>
 </body>
 
 </html>

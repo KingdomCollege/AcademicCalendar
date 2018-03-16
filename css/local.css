@@ -1,0 +1,55 @@
+
+		#calendar {
+			max-width: 900px;
+			margin: 40px auto;
+			/* local image address */
+			/**
+			background-image: url('img/DSCF4205_retouched.jpg');
+			/* On server image address */
+			/**/
+			background-image: url('../images/DSCF4205_retouched.jpg');
+			/**/
+			padding: 20px;
+			border: 2px outset #888;
+			border-radius: 5px;
+		}
+
+		#calendar h2 {
+			color: #000;
+		}
+
+		.fc-toolbar.fc-header-toolbar {
+			margin-bottom: 0 !important;
+			padding-bottom: 1em;
+		}
+
+		#calendar div.fc-toolbar.fc-header-toolbar,
+		#calendar div.fc-view-container {
+			background-color: rgba(255, 255, 255, 0.5);
+			border-radius: 5px 5px 0 0;
+		}
+
+		.fc-view>table {
+			border-collapse: separate !important;
+		}
+
+		.fc-widget-content {
+			border-radius: 0 0 5px 5px;
+		}
+
+		.fc-day-number {
+			font-weight: bolder;
+		}
+
+		.fc-unthemed .fc-content,
+		.fc-unthemed .fc-divider,
+		.fc-unthemed .fc-list-heading td,
+		.fc-unthemed .fc-list-view,
+		.fc-unthemed .fc-popover,
+		.fc-unthemed .fc-row,
+		.fc-unthemed tbody,
+		.fc-unthemed td,
+		.fc-unthemed th,
+		.fc-unthemed thead {
+			border-color: #000 !important;
+		}
