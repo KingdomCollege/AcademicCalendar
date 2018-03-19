@@ -1,55 +1,64 @@
+#calendarContainer {
+	/* local image address */
+	/**/
+	background-image: url('../img/DSCF4205_retouched.jpg');
+	background-size: cover;
+	/* On server image address */
+	/**
+	background-image: url('../images/DSCF4205_retouched.jpg');
+	/**/
+	padding: 20px;
+	border: 2px outset #888;
+	border-radius: 5px;
+}
+#calendarView,
+#calendarList {
+	
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 5px;
+	padding: 20px;
+}
 
-		#calendar {
-			max-width: 900px;
-			margin: 40px auto;
-			/* local image address */
-			/**
-			background-image: url('img/DSCF4205_retouched.jpg');
-			/* On server image address */
-			/**/
-			background-image: url('../images/DSCF4205_retouched.jpg');
-			/**/
-			padding: 20px;
-			border: 2px outset #888;
-			border-radius: 5px;
-		}
+#calendarView h2,
+#calendarList h2 {
+	color: #000;
+}
 
-		#calendar h2 {
-			color: #000;
-		}
+#calendarView .fc-day-number,
+#calendarList .fc-list-item-title {
+	font-weight: bold;
+}
 
-		.fc-toolbar.fc-header-toolbar {
-			margin-bottom: 0 !important;
-			padding-bottom: 1em;
-		}
+#calendarContainer .fc-unthemed .fc-content,
+#calendarContainer .fc-unthemed .fc-divider,
+#calendarContainer .fc-unthemed .fc-list-heading td,
+#calendarContainer .fc-unthemed .fc-list-view,
+#calendarContainer .fc-unthemed .fc-popover,
+#calendarContainer .fc-unthemed .fc-row,
+#calendarContainer .fc-unthemed tbody,
+#calendarContainer .fc-unthemed td,
+#calendarContainer .fc-unthemed th,
+#calendarContainer .fc-unthemed thead {
+	border-color: #000 !important;
+}
 
-		#calendar div.fc-toolbar.fc-header-toolbar,
-		#calendar div.fc-view-container {
-			background-color: rgba(255, 255, 255, 0.5);
-			border-radius: 5px 5px 0 0;
-		}
+/* 
+#calendar .fc-toolbar.fc-header-toolbar {
+	margin-bottom: 0 !important;
+	padding-bottom: 1em;
+}
 
-		.fc-view>table {
-			border-collapse: separate !important;
-		}
+#calendar div.fc-toolbar.fc-header-toolbar,
+#calendar div.fc-view-container {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 5px 5px 0 0;
+}
 
-		.fc-widget-content {
-			border-radius: 0 0 5px 5px;
-		}
+#calendar .fc-view>table {
+	border-collapse: separate !important;
+}
 
-		.fc-day-number {
-			font-weight: bolder;
-		}
-
-		.fc-unthemed .fc-content,
-		.fc-unthemed .fc-divider,
-		.fc-unthemed .fc-list-heading td,
-		.fc-unthemed .fc-list-view,
-		.fc-unthemed .fc-popover,
-		.fc-unthemed .fc-row,
-		.fc-unthemed tbody,
-		.fc-unthemed td,
-		.fc-unthemed th,
-		.fc-unthemed thead {
-			border-color: #000 !important;
-		}
+#calendar .fc-widget-content {
+	border-radius: 0 0 5px 5px;
+}
+ */
